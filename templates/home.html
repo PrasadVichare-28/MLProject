@@ -80,10 +80,9 @@
 </head>
 <body>
     <div class="login">
-        <h1>Student Exam Performance Indicator</h1>
+        <h2>Student Exam Performance Indicator</h2>
         <form action="{{ url_for('predict_datapoint') }}" method="post">
-            <br>
-            <legend><b>Student Exam Performance Prediction</b></legend>
+
             <div class="mb-3">
                 <label class="form-label">Gender</label>
                 <select class="form-control" name="gender" required>
@@ -143,7 +142,7 @@
                 <input class="btn btn-primary" type="submit" value="Predict your Maths Score">
             </div>
         </form>
-        <h2>The prediction is {{results}}</h2>
+        <h2>The predicted score is {{results}}</h2>
     </div>
 </body>
 </html>
